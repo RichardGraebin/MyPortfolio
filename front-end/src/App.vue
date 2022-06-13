@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
+    <MenuModal></MenuModal>
   </div>
 </template>
 
@@ -22,10 +23,12 @@ import Component from "vue-class-component";
 
 // Components
 import NavBar from "./components/NavBar.vue";
+import MenuModal from "./components/MenuModal.vue";
 
 @Component({
   components: {
     NavBar,
+    MenuModal,
   },
 })
 export default class App extends Vue {}
